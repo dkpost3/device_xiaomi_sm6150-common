@@ -276,6 +276,9 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat
+
+PRODUCT_PACKAGES += \
     CarrierConfigOverlay
 
 # Recovery
