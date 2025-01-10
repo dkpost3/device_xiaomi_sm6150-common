@@ -148,6 +148,9 @@ on property:sys.boot_completed=1
 
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
+    
+    #Stop Statsd
+    stop statsd
 
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
