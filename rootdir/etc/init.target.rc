@@ -97,6 +97,10 @@ on post-fs-data
     mkdir /mnt/vendor/persist/fpc 0770 system system
     mkdir /data/vendor/fpdump 0770 system system
 
+    # Workarround for cache
+    rm /data/resource-cache
+    rm /data/system/package_cache
+
 on boot
     start rmt_storage
     start rfs_access
