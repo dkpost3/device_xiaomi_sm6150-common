@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2021 The LineageOS ProjectMore actions
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_shared {
+    name: "libgui_shim_sm6150",
+    srcs: ["libgui_shim.c"],
+    vendor: true,
+}
